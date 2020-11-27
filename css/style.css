@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #444;
   background-color: #f3f3f3;
   height: 100vh;
@@ -88,7 +88,7 @@ nav {
   position: relative;
   max-width: 100rem;
   margin: 4rem auto;
-  display: grid;
+  display: none;
   grid-template-columns: 4fr 3fr;
   grid-template-rows: auto repeat(3, 15rem) auto;
   gap: 2rem;
@@ -96,7 +96,7 @@ nav {
   /* NOTE This creates the fade in/out anumation */
   /* opacity: 0; */
   opacity: 1;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .balance {
@@ -141,11 +141,13 @@ nav {
 .movements__type {
   font-size: 1.1rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 500;
   color: #fff;
   padding: 0.1rem 1rem;
   border-radius: 10rem;
   margin-right: 2rem;
+  width: 13rem;
 }
 
 .movements__date {
@@ -153,6 +155,8 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   color: #666;
+  margin-left: 4rem;
+  width: auto;
 }
 
 .movements__type--deposit {
